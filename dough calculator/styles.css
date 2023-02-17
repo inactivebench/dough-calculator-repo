@@ -1,0 +1,181 @@
+html{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body{
+	color: #34321C;
+	font-family: "Avenir Next", "Avenir", sans-serif;
+	line-height: 1.4em;
+	background: #F7F7F0;
+	width: 80%;
+	max-width: 600px;
+	margin: 8% auto 8% auto;
+	background-image: url(images/wave3.svg);
+	background-size: cover;
+
+}
+.icon{
+	text-align: center;
+}
+.icon > h1 {
+	color: orangered;
+}
+.logo{
+	height: auto;
+    width: auto;
+    max-height: 70px;
+    max-width: 200px;
+}
+.
+ #input-group {
+	display: flex;
+}
+.input-wrapper{
+	display: flex;
+	background: #fff;
+	border: 1px solid rgb(225, 224, 215);
+	border-radius: 4px;
+}
+.input-wrapper > input{
+	flex-grow: 0;
+	flex-basis: auto;
+	min-width: 25%;
+	background: none;
+	font-size: 1.2em;
+	font-weight: 500;
+	text-align: right;
+	outline: none;
+	border: none;
+}
+.clearfix > label {
+    font-weight: 600;
+    margin-top: 16px;
+}
+ .volume-label{
+	cursor: pointer;
+	font-size: 0.8em;
+	font-weight: normal;
+	color: #001858;
+	margin-bottom: 6px;
+	margin-top: 16px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(225, 224, 215, 0.5);
+	border-radius: 100px;
+	padding: 0 10px;
+	display: inline-flex;
+}
+
+.full{
+	width:100%;
+}
+ .left{
+	width:49%;
+	float: left;
+}
+.right {
+	width:49%;
+	float: right;
+}
+ .input-wrapper > p {
+	text-align: right;
+	padding-right: 4px;
+}
+
+.ingredients-btn{
+	margin-top: 25px;
+	margin-bottom: 15px;
+	padding:10px;
+	background-color: white;
+	font-weight: 600;
+	font-size: 1.2em;
+	border: 1px solid rgb(225, 224, 215);
+	border-radius: 4px;
+}
+
+.modal{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: 200ms ease-in-out;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: white;
+	width:400px;
+	max-width:80%;
+	z-index: 10;
+}
+
+.ingredients-list {
+	display: block;
+  padding: 20px;
+}
+
+.ingredients-list > label{
+	display: block;
+ 	margin-bottom: 0.4em;
+	font-weight: 600;
+}
+
+input[type="checkbox"]{
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.modal-header{
+	width: 100%;
+	text-align: center;	
+}
+.modal-header > p{
+	font-weight: 600;
+	font-size: 22px;
+}
+.modal-footer{
+	width:100%;
+	text-align: right;
+}
+
+.close{
+	border:none;
+	color: orangered;
+	font-size:20px;
+	background: transparent;
+	text-align: center;
+	padding: 12px 32px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.modal.active {
+ transform: translate(-50%, -50%) scale(1);
+}
+#overlay{
+	position: fixed;
+	opacity: 0;
+	transition: 200ms ease-in-out;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0, 0.5);
+	pointer-events: none;
+}
+#overlay.active{
+	opacity: 1;
+	pointer-events: all
+}
+
+.information{
+	font-size: 1.1rem;
+}
+#reset{
+	background:transparent;
+	border: none;
+
+}
+.reset-btn{
+	height: auto;
+    width: auto;
+    max-height: 100px;
+    max-width: 200px;
+    
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Toast - Dough Calculator</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div class="icon">
+				<img class="logo" src="images/coffee.png" alt="Image of Dough">
+				<h1>Dough Calculator</h1>
+			</div>
+		</header>
+		<section class="input-fields">
+			<div class="input-group" id="input-group flour">
+			<div class="clearfix">
+					<label id="flour-label" for="flour-grams">Flour</label>
+					<p id="flour-volume" class="volume-label">cup</p>
+			</div>
+			<div class="input-wrapper full">
+				<input class="full weight" id="flour-grams" tabindex="1" type="number"	name="water">
+				<p>g</p>
+			</div>
+			</div>
+			<div class="input-group" id="input-group water">
+				<div class="clearfix">
+					<label id="water-label" for="water-grams">Water</label>
+					<p id="water-volume" class="volume-label">cup</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="water-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="water-grams" tabindex="2" type="number" name="water-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group salt">
+				<div class="clearfix">
+					<label id="salt-label" for="salt-grams">Salt</label>
+					<p id="salt-volume" class="volume-label">tsp</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="salt-percent" tabindex="3" type="number" name="salt"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="salt-grams" tabindex="2" type="number" name="salt-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group milk">
+				<div class="clearfix">
+					<label id="milk-label" for="milk-grams">Milk</label>
+					<p id="milk-volume" class="volume-label">cup</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="milk-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="milk-grams" tabindex="2" type="number" name="milk-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group yeast">
+				<div class="clearfix">
+					<label id="yeast-label" for="yeast-grams">Yeast</label>
+					<p id="yeast-volume" class="volume-label">tsp</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="yeast-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="yeast-grams" tabindex="2" type="number" name="yeast-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group leaven">
+				<div class="clearfix">
+					<label id="leaven-label" for="leaven-grams">Leaven</label>
+					<p id="leaven-volume" class="volume-label">cup</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="leaven-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="leaven-grams" tabindex="2" type="number" name="leaven-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group poolish">
+				<div class="clearfix">
+					<label id="poolish-label" for="poolish-grams">Poolish</label>
+					<p id="poolish-volume" class="volume-label">cup</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="poolish-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="poolish-grams" tabindex="2" type="number" name="poolish-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group starter">
+				<div class="clearfix">
+					<label id="starter-label" for="starter-grams">Starter</label>
+					<p id="starter-volume" class="volume-label">Tbsp</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="starter-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="starter-grams" tabindex="2" type="number" name="starter-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group oil">
+				<div class="clearfix">
+					<label id="oil-label" for="oil-grams">Oil</label>
+					<p id="oil-volume" class="volume-label">Tbsp</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="oil-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="oil-grams" tabindex="2" type="number" name="oil-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group sugar">
+				<div class="clearfix">
+					<label id="sugar-label" for="sugar-grams">Sugar</label>
+					<p id="sugar-volume" class="volume-label">cup</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="sugar-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="sugar-grams" tabindex="2" type="number" name="sugar-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group butter">
+				<div class="clearfix">
+					<label id="butter-label" for="butter-grams">Butter</label>
+					<p id="butter-volume" class="volume-label">cup</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="butter-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="butter-grams" tabindex="2" type="number" name="butter-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group eggs">
+				<div class="clearfix">
+					<label id="eggs-label" for="eggs-grams">Eggs</label>
+					<p id="eggs-volume" class="volume-label">large egg</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="eggs-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="eggs-grams" tabindex="2" type="number" name="eggs-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group honey">
+				<div class="clearfix">
+					<label id="honey-label" for="honey-grams">Honey</label>
+					<p id="honey-volume" class="volume-label">cup</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="honey-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="honey-grams" tabindex="2" type="number" name="honey-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<div class="input-group" id="input-group bakingpowder">
+				<div class="clearfix">
+					<label id="bakingpowder-label" for="bakingpowder-grams">Baking Powder</label>
+					<p id="bakingpowder-volume" class="volume-label">tsp</p>
+				</div>
+				<div class="input-wrapper left">
+					<input class="percentage" id="bakingpowder-percent" tabindex="3" type="number" name="water"><p>%</p>
+				</div>
+				<div class="input-wrapper right">
+					<input class="weight" id="bakingpowder-grams" tabindex="2" type="number" name="bakingpowder-grams">
+					<p>g</p>
+				</div>
+			</div>
+			<button class="ingredients-btn full" id="open">Add/Remove Ingredients</button>
+			<div class="modal" id="modal" >
+				<div class="modal-header">
+					<p class="info">Select your ingredients</p>
+				</div>
+				<div class="ingredients-list">
+					<input type="checkbox" class="flour checkbox" id="show-hide" name="flour" checked="" disabled="" ><label for="flour"> Flour</label>
+					<input type="checkbox" class="water checkbox" id="show-hide" name="water" checked="" disabled=""><label for="water"> Water</label>
+					<input type="checkbox" class="salt checkbox" id="show-hide" name="salt" checked ><label for="salt"> Salt</label>
+					<input type="checkbox" class="milk checkbox" id="show-hide" name="milk" ><label for="milk"> Milk</label>
+					<input type="checkbox" class="yeast checkbox" id="show-hide" name="yeast" ><label for="yeast"> Yeast</label>
+					<input type="checkbox" class="leaven checkbox" id="show-hide" name="leaven" checked><label for="leaven"> Leaven</label>
+					<input type="checkbox" class="poolish checkbox" id="show-hide" name="poolish" ><label for="poolish"> Poolish</label>
+					<input type="checkbox" class="starter checkbox" id="show-hide" name="starter" ><label for="starter"> Starter</label>
+					<input type="checkbox" class="oil checkbox" id="show-hide" name="oil" ><label for="oil"> Oil</label>
+					<input type="checkbox" class="sugar checkbox" id="show-hide" name="sugar" ><label for="sugar"> Sugar</label>
+					<input type="checkbox" class="butter checkbox" id="show-hide" name="butter" ><label for="butter"> Butter</label>
+					<input type="checkbox" class="eggs checkbox" id="show-hide" name="eggs" ><label for="eggs"> Eggs</label>
+					<input type="checkbox" class="honey checkbox" id="show-hide" name="honey" ><label for="honey"> Honey</label>
+					<input type="checkbox" class="bakingpowder checkbox" id="show-hide" name="bakingpowder" ><label for="bakingpowder"> Baking Powder</label>
+				</div>
+				<div class="modal-footer">
+					<button  class="close" id="close">OK</button>
+				</div>
+			</div>
+			<div class="overlay" id="overlay"></div>
+		</section>
+		<section class="information">
+			<div class="information">
+				<h2>Dough Weight and Hydration</h2>
+				<p id="w-h"></p>
+				<h2>Baker's Percentage</h2>
+				<p>Baker’s percentages represent the percentage of ingredients to the flour weight not total dough weight.</p>
+				<h2>Assumptions</h2>
+				<p>As you build your recipe using, here are some assumptions for your consideration:</p>
+				<ul>
+					<li>Flour percentage is 100% and from this we base our calculations</li>
+					<li>The flour and water used for either poolish or Leaven are considered to be part of the flour and water weight in their respective fields</li>
+					<li>Both Poolish and Leaven have 100% hydration. (equal parts of flour and water) </li>
+				</ul>
+				<button id="reset">
+					<img class="reset-btn"  src="images/reset.png"></button>
+			</div>	
+		</section>
+	</div>
+	<script src="index.js" ></script>
+</body>
+</html>
